@@ -4,8 +4,6 @@
 
 ## Dataset
 
-> Provide basic information about your dataset in this section. If you selected your own dataset, make sure you note the source of your data and summarize any data wrangling steps that you performed before you started your exploration.
-
 The dataset comprises data on 113937 loans with 81 attributes corresponding to the loan, borrower and lender's details. 61 columns are numeric including the key/id columns and categorical types for ListingCategory. The columns include, amoung others; BorrowerRate, EmploymentStatus, IncomeRange, LoanOriginalAmount. The dataset covers juist over 9 years between 2005 and 2014.
 
 There were huge outliers for the StatedMonthlyIncome attribute that skewed the data, all values greater than $20,000 were removed from the dataset.
@@ -15,11 +13,11 @@ There were huge outliers for the StatedMonthlyIncome attribute that skewed the d
 
 From the univeriate analysis, The distribution of LoanStatus revealed "Current" had the highest count of Loans, further investigations revealed LoanListing were in an increasing sequence with the highest count having been made in 2013, the last full year in the dataset. A bivariate plot of LoanStatus against LoanComencementYear revealed the majority of the LoanListing were made in the last 3 years of the dataset. 77% of the LoanListing were of Term length 36months, and a bivariate plot against LoanStatus revealed the majority of the loans were "Current" or overaly still active, with the exception of the 12 month Term which had a zero count on active Laons.
 
-The highest count of Loans for IncomeRange was at "25k-50k", with over 25% of the individuals earning over $25,000. This was matched with the StatedMontlyIncomes with a right tailed distribution with a peak at $3,500 and 75% of the incomes lie below \\$6,825. Ploting Income levels againt LoanStatus reaveled the highest count for each income level were Current on their monthly payments or in the FinalPaymentsInProgress level.
+The highest count of Loans for IncomeRange was at "25k-50k", with over 25% of the individuals earning over $25,000. This was matched with the StatedMontlyIncomes with a right tailed distribution with a peak at $3,500 and 75% of the incomes lie below $6,825. Ploting Income levels againt LoanStatus reaveled the highest count for each income level were Current on their monthly payments or in the FinalPaymentsInProgress level.
 
 
 The majority of the loans are of below $10,000 in value and the appear to peak, in somewhat of a decreaasing sequence.
-Loans listed for individuals with higher incomes appear to be moslty in a positive outcome, especially those of above \\$25,000 offered for Income level above $7,500. While generally large loans(>$15,000) tend to have a positive outcome, loans that were either Cancelled, Defauled or Charged of were from lower Income levels, (<\\$2500). There is a floor Income amount for loans above \\$25,000.
+Loans listed for individuals with higher incomes appear to be moslty in a positive outcome, especially those of above $25,000 offered for Income level above $7,500. While generally large loans(>$15,000) tend to have a positive outcome, loans that were either Cancelled, Defauled or Charged of were from lower Income levels, (<$2500). There is a floor Income amount for loans above $25,000.
 
 Amoung those that provided their occupation, the top five occupations are Professional, Sales, Computer Programmer, Executive and Teacher.
 The most popular list category is category 1:Debt Consolidation.
@@ -42,5 +40,5 @@ On the heatmap for 'LoanStatus', 'ListingCategory' and 'LoanOriginalAmount' we s
 
 The presantation is going to focus on how LoanStatus interacts with Term, BorrowerAPR LoanOriginationYear as well as numeric variable of StatedMonthlyIncome and LoanOriginalAmount. Monthly incomes are going to be limited to those below $20,000, which is about 99% of the dataset. We will begin by investigating the distributions of each indivdual variable and proceed to how they relate to each other.
 
-The highest count of loan are in the "Current" loan status and 77% of all loans were used for a 36 month Term period. There were more loans listed each successive year, with 2013 having the highest count of loans, the majority of these were current on the payments. The distribution for BorrowerAPR is unimodal, and the higher the BorrowerAPR, the higher the chance the loan will result in an unfavourable outcome.  The is a floor income amount for loans above \\$25,000, and the majority of these are 'Current' on their repayments.
+The highest count of loan are in the "Current" loan status and 77% of all loans were used for a 36 month Term period. There were more loans listed each successive year, with 2013 having the highest count of loans, the majority of these were current on the payments. The distribution for BorrowerAPR is unimodal, and the higher the BorrowerAPR, the higher the chance the loan will result in an unfavourable outcome.  The is a floor income amount for loans above $25,000, and the majority of these are 'Current' on their repayments.
 
