@@ -1,5 +1,5 @@
-# (Dataset Exploration Title)
-## by (your name here)
+# Prosper Loan Data
+## by Alvin Svinurai
 
 
 ## Dataset
